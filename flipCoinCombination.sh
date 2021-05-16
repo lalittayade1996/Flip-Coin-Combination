@@ -15,4 +15,11 @@ f=$( random )
 flip[$i]=$f
 winper=$(( 100/2 ))
 done
+for(( i=5;i<10;i++ ))
+do
+r=$(random)$(random)
+flip[$i]=$r
+winper2=$(( 100/4 ))
+done
+
 echo ${flip[@]}
