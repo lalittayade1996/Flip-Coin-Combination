@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 declare -A flip
 random(){
@@ -20,6 +20,12 @@ do
 r=$(random)$(random)
 flip[$i]=$r
 winper2=$(( 100/4 ))
+done
+for(( i=10;i<15;i++ ))
+do
+p=$(random)$(random)$(random)
+flip[$i]=$p
+winper3=$(( 100/6 ))
 done
 
 echo ${flip[@]}
